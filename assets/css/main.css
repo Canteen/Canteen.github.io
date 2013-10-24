@@ -6,6 +6,7 @@ body {
 a {
 	color:#356de4;
 	text-decoration:none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0); 
 }
 a:hover {
 	text-decoration:underline;
@@ -205,6 +206,7 @@ p.overview .focus {
 	padding-top:20px;
 	text-align:center;
 	color:#999;
+	font-size:90%;
 }
 
 .copyright a {
@@ -232,7 +234,7 @@ code {
 }
 
 p.instruction {
-	margin:0 0 20px 35px;
+	margin:0 0 20px 40px;
 	font-size:90%;
 	line-height:1.6;
 }
@@ -263,6 +265,12 @@ p.instruction {
 	article {
 		border:0;
 	}
+	article ul {
+		padding-left:20px;
+	}
+	ul.dependencies {
+		padding-left:10px;
+	}
 	nav {
 		margin-bottom:20px;
 	}
@@ -271,5 +279,8 @@ p.instruction {
 	}
 	h3:first-letter {
 		font-size:140%;
+	}
+	p.instruction {
+		margin-left:30px;
 	}
 }
