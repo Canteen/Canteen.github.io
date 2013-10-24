@@ -1,37 +1,154 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>	  <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>		 <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>		 <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
-<!--[if IE 9]>		 <html class="no-js lt-ie10"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Canteen</title>
-		<meta name="author" content="CloudKid">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Canteen</title>
+        <meta name="author" content="Matt Karl">
 		<meta name="description" content="Small PHP framework and related extensions for building JSON-driven, stateless websites.">
 		<meta name="keywords" content="php, js, framework, html5, json, cms">
-		
-		<link rel="stylesheet" href="assets/css/normalize.css">
-		<link rel="stylesheet" href="assets/css/boilerplate.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/boilerplate.css">
+		<link rel="stylesheet" href="assets/css/fonts.css">
 		<link rel="stylesheet" href="assets/css/main.css">
-		
-		<script src="assets/js/modernizer.js"></script>
-		<script src="assets/js/jquery.js"></script>
-		<script src="assets/js/main.js"></script>
-	</head>
-	<body id="home">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic' rel='stylesheet' type='text/css'>
+        <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+		<header>
+			<h1><img src="assets/images/logo.png" alt="Canteen"><a href="http://github.com/Canteen" class="git icon-source"></a></h1>
+		</header>
 		<div id="frame">
-			<nav>
-				<ul>
-					<li><a href="/">Home</a></li>
-				</ul>
-			</nav>
-			<article>
-			</article>
-			<footer>
-				&copy;2013
+			<p class="overview">
+				Canteen is a light-weight PHP &amp; JavaScript framework<br class="twoLines">
+				for building <span class="focus">modern, flexible, asynchronous</span> websites.
+			</p>
+			<div class="clearfix content">
+				<nav>
+					<h2 class="icon-libraries">Libraries</h2>
+					<ul>
+						<li>Canteen Framework 
+							<span class="description">The core PHP framework for running Canteen</span>
+							<ul class="clearfix">
+								<li class="src"><a href="http://github.com/Canteen/CanteenFramework" class="icon-source"></a></li> 
+								<li class="docs"><a href="http://canteen.github.com/CanteenFramework" class="icon-docs"></a></li>
+							</ul>
+						</li>
+						<li>Canteen Client 
+							<span class="description">The client-side, event-driven JavaScript library</span>
+							<ul class="clearfix">
+								<li class="src"><a href="http://github.com/Canteen/CanteenClient" class="icon-source"></a></li> 
+								<li class="docs"><a href="http://canteen.github.com/CanteenClient" class="icon-docs"></a></li>
+							</ul>
+						</li>
+						<li>Canteen HTML5 
+							<span class="description">Generates valid HTML5 markup with PHP</span>
+							<ul class="clearfix">
+								<li class="src"><a href="http://github.com/Canteen/CanteenHTML5" class="icon-source"></a></li>
+								<li class="docs"><a href="http://canteen.github.com/CanteenHTML5" class="icon-docs"></a></li>
+							</ul>
+						</li>
+						<li>Canteen Database 
+							<span class="description">Simple object-oriented MySQL database abstracting</span>
+							<ul class="clearfix">
+								<li class="src"><a href="http://github.com/Canteen/CanteenDatabase" class="icon-source"></a></li>
+								<li class="docs"><a href="http://canteen.github.com/CanteenDatabase" class="icon-docs"></a></li>
+							</ul>
+						</li>
+						<li>Canteen Logger
+							<span class="description">PHP debugging utilities for easy to read, in-browser logging</span>
+							<ul class="clearfix">
+								<li class="src"><a href="http://github.com/Canteen/CanteenLogger" class="icon-source"></a></li> 
+								<li class="docs"><a href="http://canteen.github.com/CanteenLogger" class="icon-docs"></a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<article>
+					<h2 class="icon-features">Features</h2>
+					<ul>
+						<li>Easy to install, setup, configure</li>
+						<li>Page and database caching</li>
+						<li>Dependency management with <a href="http://getcomposer.org">Composer</a> (server) and <a href="http://bower.io">Bower</a> (client)</li>
+						<li>Template engine for building dynamic HTML5 markup</li>
+						<li>Fully documented API with <a href="http://yui.github.io/yuidoc/">YUIDocs</a></li>
+						<li>Deep-linking and valid SEO</li>
+						<li>Built-in server-side Service Browser, Logger and Profiler</li>
+						<li>MIT software license</li>
+					</ul>
+					<h2 class="icon-dependencies">Dependencies</h2>
+					<ul class="dependencies">
+						<li><span class="tag server">server</span>Apache (<em>mod_rewrite</em> &amp; .htaccess use)</li>
+						<li><span class="tag server">server</span>PHP 5.3+</li>
+						<li><span class="tag server">server</span>MySQL database</li>
+						<li><span class="tag server">server</span><span class="tag optional">optional</span><a href="http://php.net/manual/en/book.zlib.php">zlib</a> for PHP installed</li>
+						<li><span class="tag server">server</span><span class="tag optional">optional</span>Memcache (<em>mod_mem_cache</em> Apache module)</li>
+						<li><span class="tag client">client</span><a href="http://jquery.org">jQuery 1.9+</a></li>
+						<li><span class="tag client">client</span><a href="https://github.com/browserstate/history.js/">History.js</a></li>
+					</ul>
+					<p class="dependenciesKey">
+						<span class="tag server">server</span>
+						<span class="tag client">client</span>
+						<span class="tag optional">optional</span>
+					</p>
+					<h2 class="icon-started">Getting Started</h2>
+					
+					<h3 class="icon-download">Download Boilerplate</h3>
+					
+					<p class="instruction">Download <a href="https://github.com/Canteen/CanteenBoilerplate/archive/master.zip">
+						Canteen Boilerplate</a>	unzip and install on an Apache web-server. If 
+						creating a virtual host, use the <em>deploy</em> directory contained
+						in the Boilerplate project as the public directory.
+					</p>
+					
+					<h3 class="icon-install">Auto-Install Dependencies</h3>
+					
+					<p class="instruction">Open up a command-line Terminal and <code>cd</code> to the Boilerplate 
+						install location. Running the command <code>ant install</code>. Please note
+						that <a href="http://ant.apache.org/">Apache Ant</a>, 
+						<a href="http://getcomposer.org/doc/00-intro.md#installation-nix">Composer</a>, 
+						<a href="http://bower.io">Bower</a> and 
+						<a href="https://github.com/mishoo/UglifyJS">UglifyJS</a> need to be installed
+						in order to run the auto-install task.</p>
+					
+					<h3 class="icon-database">Create MySQL Database &amp; User</h3>	
+					
+					<p class="instruction">It's probably a good idea to create a database that is 
+						used exclusively for Canteen as to not conflict with existing tables 
+						and projects.</p>
+					
+					<h3 class="icon-navigate">View In Browser</h3>
+					
+					<p class="instruction">Open up the site in your browser and follow the rest of the setup instructions.
+						You'll be prompted to setup your configuration as well as create the
+						administrator user.</p>
+					
+				</article>
+			</div>
+			<footer class="copyright">
+				&copy; 2013 <a href="http://github.com/bigtimebuddy">Matt Karl</a> (MIT License)
 			</footer>
 		</div>
-	</body>
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>-->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-45120102-1', 'canteen.github.io');ga('send', 'pageview');
+		</script>
+    </body>
 </html>
